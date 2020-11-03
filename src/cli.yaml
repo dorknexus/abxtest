@@ -1,0 +1,27 @@
+name: ABX Tester
+version: "0.1"
+author: dork <dorknexus@github>
+about: Generic ABX testing on the command line
+args:
+    - COMMAND_A:
+        index: 1
+        required: true
+        about: Command to be used for sample type A
+    - COMMAND_B:
+        index: 2
+        required: true
+        about: Command to be used for sample type B
+    - LABEL_A:
+        short: A
+        default_value: "A"
+        about: Label for samples of <COMMAND_A>
+    - LABEL_B:
+        short: B
+        default_value: "B"
+        about: Label for samples of <COMMAND_B>
+    - NUM_TRIALS:
+        short: n
+        long: trials
+        default_value: "10"
+        about: Number of trials to run
+    
